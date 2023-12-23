@@ -12,3 +12,13 @@ for (let i = 0; i < 256; i++) {
 };
 
 createGrid();
+
+const slider = document.querySelector('#slider')
+const screenVal = document.querySelector('.value');
+slider.addEventListener('input', function(){
+    let val = document.getElementById('slider').value;
+    screenVal.textContent = `${val} x ${val}`;
+
+});
+
+
