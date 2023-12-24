@@ -21,6 +21,7 @@ function removeAllChildNodes(parent){
 
 const slider = document.querySelector('#slider')
 const screenVal = document.querySelector('.value');
+
 slider.addEventListener('input', function(){
     let val = document.getElementById('slider').value;
     screenVal.textContent = `${val} x ${val}`;
@@ -33,6 +34,29 @@ slider.addEventListener('input', function(){
             event.target.style.backgroundColor = 'black';
         })
         grid.appendChild(div); 
+    }
+});
+
+// Rainbow (RGB)
+
+function getRandomColor(){
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+}
+
+const rgb = document.querySelector('#rgb');
+
+rgb.addEventListener('click', function(){
+    let val = document.getElementById('slider').value;
+    let cell = grid.children;
+    for (let i = 0; i < val*val; i++) {
+        cell[i].addEventListener('mouseover', function(event){
+            event.target.style.backgroundColor = getRandomColor();
+        })
     }
 });
 
