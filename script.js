@@ -83,7 +83,7 @@ eraser.addEventListener('click', function(){
     let cell = grid.children;
     for (let i = 0; i < val*val; i++) {
         cell[i].addEventListener('mouseover', function(event){
-            event.target.style.backgroundColor = 'white';
+            event.target.style.backgroundColor = 'gray';
         })
     }
 });
@@ -110,7 +110,7 @@ reset.addEventListener('click', function(){
     let val = document.getElementById('slider').value;
     let cell = grid.children;
     for (let i = 0; i < val*val; i++) {
-        cell[i].style.backgroundColor = 'white';
+        cell[i].style.backgroundColor = 'gray';
     }
 });
 
