@@ -102,8 +102,8 @@ button:active{
     margin-top: 25px;
     margin-bottom: 50px;
     display: inline-grid;
-    grid-template-columns: repeat(16, 2fr);
-    grid-template-rows: repeat(16, 2fr);
+    grid-template-columns: repeat(50, 2fr);
+    grid-template-rows: repeat(50, 2fr);
     border: 5px solid gray;
     border-radius: 5px;
     height: 575px;
