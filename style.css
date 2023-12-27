@@ -14,6 +14,7 @@ body{
 h1{
     font-size: 50px;
     color: white;
+    text-shadow: 5px 5px black;
 }
 
 #title{
@@ -31,6 +32,7 @@ button{
     width: 80px;
     font-size: 20px;
     background-color: white;
+    box-shadow: 5px 5px;
 }
 
 button:hover{
@@ -50,6 +52,7 @@ button:active{
 
 #color{
     width: 80px;
+    box-shadow: 3px 3px;
 }
 
 #color:hover{
@@ -101,8 +104,11 @@ button:active{
     display: inline-grid;
     grid-template-columns: repeat(16, 2fr);
     grid-template-rows: repeat(16, 2fr);
+    border: 5px solid gray;
+    border-radius: 5px;
     height: 575px;
     width: 575px;
+    box-shadow: 10px 10px;
 }
 
 .cell{
